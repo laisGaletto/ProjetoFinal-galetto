@@ -1,0 +1,19 @@
+.itemList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.noProducts {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.25rem;
+  color: #64748b;
+}
+
+@media (max-width: 640px) {
+  .itemList {
+    grid-template-columns: 1fr;
+  }
+}

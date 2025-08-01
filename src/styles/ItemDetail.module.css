@@ -1,0 +1,115 @@
+.itemDetail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemImage {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.itemPrice {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+
+.itemDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.stockInfo {
+  margin-bottom: 2rem;
+}
+
+.inStock {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.outOfStock {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.goToCartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.goToCartButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.goToCartButton:hover {
+  background-color: #2563eb;
+}
+
+.continueShopping {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.continueShopping:hover {
+  background-color: #f0f9ff;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.25rem;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .itemDetail {
+    grid-template-columns: 1fr;
+  }
+}
